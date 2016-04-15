@@ -1,8 +1,9 @@
 <?php
 
+require_once __DIR__ .'/../../config/database.php';
+
 class Model
 {
-	
 	/*
 		Модель обычно включает методы выборки данных, это могут быть:
 			> методы нативных библиотек pgsql или mysql;

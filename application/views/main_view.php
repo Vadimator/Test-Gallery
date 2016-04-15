@@ -1,1 +1,5 @@
-<h1>hello sad</h1>
+
+
+<h1>This is maim page</h1>
+
+<?php echo $data; ?>

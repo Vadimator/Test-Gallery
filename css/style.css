@@ -1,12 +1,27 @@
-﻿#footer {
+﻿html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 60px;
+}
+#footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	/* Set the fixed height of the footer here */
 	height: 60px;
-	line-height: 60px;
 	background-color: #f5f5f5;
 }
+
 textarea {
 	resize: none;
+}
+ul.gallery li{
+	display: inline-block;
+}
+.close {
+	position: relative;
+	left: -20px;
+	top: 5px;
+	color: #fff !important;
 }

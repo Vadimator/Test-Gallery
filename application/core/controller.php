@@ -15,4 +15,10 @@ class Controller {
 	{
 		// todo	
 	}
+	
+	public function redirect($way)
+	{
+		header ('Location: /' . $way);
+		
+	}
 }

@@ -1,6 +1,5 @@
 <h1>Добавление новой картинки</h1>
 
-
 <form role="form" enctype="multipart/form-data" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . '/add/store'; ?> ">
     <div class="form-group">
         <label for="exampleInputEmail1">Комментарий к изображению</label>

@@ -23,7 +23,7 @@ class Controller_add extends Controller {
                 move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
                 //Добавляем в базу данных
                 $this->model->insertImage($title, $uploadfile);
-                $this->view->generate('main_view.php', 'template_view.php');
+                $this->redirect('main');
             }else {
                 $errorFile = 'Размер файла не должен привышать 1мб и разрешены только jpg, jpeg, png';
                 $this->view->generate('add_view.php', 'template_view.php', $errorFile);

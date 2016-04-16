@@ -1,12 +1,23 @@
 <?php
 
-class Controller_Main extends Controller
-{
+class Controller_Main extends Controller {
 
-	function action_index()
-	{	
-		$this->view->generate('main_view.php', 'template_view.php');
+	public function __construct()
+	{
+		$this->model = new Model_main();
+		$this->view = new View();
+	}
+	
+	public function action_index()
+	{
+		$data = $this->model->getImg();
+		$this->view->generate('main_view.php', 'template_view.php', $data);
 	}
 
+	public function action_delete($id)
+	{
+		$this->model->deleteImg($id);
+		$this->redirect('main');
+	}
 	
 }

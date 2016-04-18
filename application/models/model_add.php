@@ -12,17 +12,19 @@ class Model_add extends Model {
         return trim(htmlspecialchars($text));
     }
 
-    public function insertImage($title, $img)
+    public function insertImage($title, $sizeFile, $img)
     {
         $db = $this->getConnect();
 
-        $stmt = $db->prepare("INSERT INTO pictures (title, uploadDate, img) VALUES (:title, :uploadDate, :img)");
+        $stmt = $db->prepare("INSERT INTO pictures (title, uploadDate, sizeFile, img) VALUES (:title, :uploadDate, :sizeFile, :img)");
         $stmt->bindParam(':title', $titleAdd);
         $stmt->bindParam(':uploadDate', $uploadDateAdd);
+        $stmt->bindParam(':sizeFile', $sizeFileAdd);
         $stmt->bindParam(':img', $imgAdd);
 
         $titleAdd = $title;
         $uploadDateAdd = date("Y-m-d H:i:s");
+        $sizeFileAdd = $sizeFile;
         $imgAdd = $img;
         $stmt->execute();
 

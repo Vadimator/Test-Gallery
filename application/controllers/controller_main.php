@@ -19,5 +19,21 @@ class Controller_Main extends Controller {
 		$this->model->deleteImg($id);
 		$this->redirect('main');
 	}
+
+	public function action_edit($id)
+	{
+		
+	}
 	
+	public function action_sortDate()
+	{
+		$data = $this->model->sortDate();
+		$this->view->generate('main_view.php', 'template_view.php', $data);
+	}
+
+	public function action_sortSize()
+	{
+		$data = $this->model->sortSize();
+		$this->view->generate('main_view.php', 'template_view.php', $data);
+	}
 }

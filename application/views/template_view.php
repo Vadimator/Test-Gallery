@@ -43,7 +43,7 @@
 </nav>
 
 
-	<div class="container main">
+	<div class="container">
 		<?php include 'application/views/'.$content_view; ?>
 	</div>	
 

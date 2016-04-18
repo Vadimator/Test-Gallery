@@ -26,9 +26,14 @@ class Route
 			$action_name = $routes[2];
 		}
 
-		//пробуем получить дополнительные параметры
+		//пробуем получить дополнительные параметры - id
 		if ( !empty($routes[3]) ){
-			$parameter = $routes[3];
+			$id = $routes[3];
+		}
+
+		//new
+		if ( !empty($routes[4]) ){
+			$parameter = $routes[4];
 		}
 
 		$model_name = 'Model_'.$controller_name;
@@ -59,7 +64,7 @@ class Route
 			if(empty($parameter)) {
 				$controller->$action();
 			}else {
-				$controller->$action($parameter);
+				$controller->$action($id, $parameter);
 			}
 		}
 		else {

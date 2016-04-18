@@ -2,7 +2,7 @@
 
 <form role="form" enctype="multipart/form-data" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . '/add/store'; ?> ">
     <div class="form-group">
-        <label for="exampleInputEmail1">Комментарий к изображению</label>
+        <label for="description">Комментарий к изображению</label>
         <textarea  name="description" class="form-control" rows="3" maxlength="200"><?php if(isset($_POST['description'])) echo $_POST['description']; ?></textarea>
     </div>
     <div class="form-group">

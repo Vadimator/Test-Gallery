@@ -20,8 +20,8 @@
             }?>" alt="<?php echo $row['title']; ?>" width="200" height="200" class="img-rounded"><br>
             <small><?php echo $row['uploadDate']; ?></small>
             <br>
-            <p><?php echo $row['title']; ?>
-                <button class="btn btn-default" id="editId<?php echo $row['id']; ?>">
+            <p><span><?php echo $row['title']; ?></span>
+                <button class="btn btn-default" id="<?php echo $row['id']; ?>">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                 </button>
             </p>

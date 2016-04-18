@@ -20,9 +20,10 @@ class Controller_Main extends Controller {
 		$this->redirect('main');
 	}
 
-	public function action_edit($id)
+	public function action_edit($id, $title)
 	{
-		
+		$this->model->updateTitle($id, urldecode($title));
+		$this->redirect('main');
 	}
 	
 	public function action_sortDate()

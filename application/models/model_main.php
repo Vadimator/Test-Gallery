@@ -38,6 +38,20 @@ class Model_main extends Model {
         return $result;
     }
 
+    public function updateTitle($id, $title)
+    {
+        $db = $this->getConnect();
+        $sql = "UPDATE pictures SET title = :title  WHERE id = :id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam(':title', $title);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+
+    public function deleteSpace($str)
+    {
+        return preg_replace('/%20/', " ", $str);
+    }
 
     private function getConnect()
     {

@@ -3,12 +3,8 @@
 <h1 class="text-center">Gallery</h1>
 
 <div class="container">
-    <a href="http://<?php echo $_SERVER['HTTP_HOST'] . '/main/sortDate'; ?>">
-        <button type="button" class="btn btn-default">Сортировать по дате</button>
-    </a>
-    <a href="http://<?php echo $_SERVER['HTTP_HOST'] . '/main/sortSize'; ?>">
-        <button type="button" class="btn btn-default">Сортировать по размеру файла</button>
-    </a>
+    <button type="button" class="btn btn-default" id="sortDate">Сортировать по дате</button>
+    <button type="button" class="btn btn-default" id="sortSize">Сортировать по размеру файла</button>
 </div>
 
 <ul class="gallery col-md-12">
@@ -24,8 +20,13 @@
             }?>" alt="<?php echo $row['title']; ?>" width="200" height="200" class="img-rounded"><br>
             <small><?php echo $row['uploadDate']; ?></small>
             <br>
-            <p><?php echo $row['title']; ?><button><i class="fa fa-pencil" aria-hidden="true"></i></button></p>
+            <p><?php echo $row['title']; ?>
+                <button class="btn btn-default" id="editId<?php echo $row['id']; ?>">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+            </p>
         </li>
     <?php endforeach; ?>
 </ul>
+
 

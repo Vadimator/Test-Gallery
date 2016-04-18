@@ -7,18 +7,20 @@ $(document).ready(function() {
 
         var inputTag = $(this).parent().find('input');
         var idBtn    = $(this).attr('id');
+        var href     = window.location.href;
 
         inputTag.keyup(function(event) {
             if(event.keyCode == 13) {
                 var textInput = $(this).val();
-                $.post("http://laravel.local/main/edit/" + idBtn + "/" + textInput + "");
+                $.post(href + "main/edit/" + idBtn + "/" + textInput + "");
                 $(this).replaceWith("<div class='title'>" + textInput + "</div>");
             }
         });
 
+
         $(this).click(function() {
             var textInput = inputTag.val();
-            $.post("http://laravel.local/main/edit/" + idBtn + "/" + textInput + "");
+            $.post(href + "main/edit/" + idBtn + "/" + textInput + "");
             $(inputTag).replaceWith("<div class='title'>" + textInput + "</div>");
         });
     });

@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154575f9-72f0-4e62-8f11-95a9038aa138" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (14).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (14).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (18).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (18).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (19).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (19).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (20).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (20).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (22).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (22).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (28).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (28).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (7).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (7).jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (2).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (2).jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/controller_add.php" afterPath="$PROJECT_DIR$/application/controllers/controller_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/route.php" afterPath="$PROJECT_DIR$/application/core/route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/model_add.php" afterPath="$PROJECT_DIR$/application/models/model_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/add_view.php" afterPath="$PROJECT_DIR$/application/views/add_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/main_view.php" afterPath="$PROJECT_DIR$/application/views/main_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template_view.php" afterPath="$PROJECT_DIR$/application/views/template_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/editTitle.js" afterPath="$PROJECT_DIR$/js/editTitle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getAjax.js" afterPath="$PROJECT_DIR$/js/getAjax.js" />
@@ -40,37 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_view.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <marker date="1460981530283" expanded="true" signature="144:166" placeholder="SELECT title... pictures" />
-                <marker date="1460981530283" expanded="true" signature="354:389" placeholder="DELETE FROM " />
-                <marker date="1460981530283" expanded="true" signature="616:658" placeholder="SELECT * FRO... pictures" />
-                <marker date="1460981530283" expanded="true" signature="855:895" placeholder="SELECT * FRO... pictures" />
-                <marker date="1460981530283" expanded="true" signature="1093:1143" placeholder="UPDATE pictu... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getAjax.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/getAjax.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -79,18 +43,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editTitle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/editTitle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="384">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -129,18 +83,18 @@
         <option value="$PROJECT_DIR$/application/views/id_view.php" />
         <option value="$PROJECT_DIR$/application/views/edit_view.php" />
         <option value="$PROJECT_DIR$/application/core/controller.php" />
-        <option value="$PROJECT_DIR$/application/views/template_view.php" />
         <option value="$PROJECT_DIR$/application/models/model_main.php" />
         <option value="$PROJECT_DIR$/application/controllers/controller_main.php" />
         <option value="$PROJECT_DIR$/application/core/route.php" />
         <option value="$PROJECT_DIR$/application/models/model_add.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/js/getAjax.js" />
         <option value="$PROJECT_DIR$/application/views/add_view.php" />
         <option value="$PROJECT_DIR$/application/controllers/controller_add.php" />
-        <option value="$PROJECT_DIR$/application/views/main_view.php" />
+        <option value="$PROJECT_DIR$/application/views/template_view.php" />
+        <option value="$PROJECT_DIR$/js/getAjax.js" />
         <option value="$PROJECT_DIR$/js/editTitle.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/application/views/main_view.php" />
       </list>
     </option>
   </component>
@@ -403,7 +357,7 @@
       <workItem from="1460792924679" duration="9209000" />
       <workItem from="1460805093943" duration="3824000" />
       <workItem from="1460927592202" duration="2969000" />
-      <workItem from="1460965816620" duration="22873000" />
+      <workItem from="1460965816620" duration="28374000" />
     </task>
     <task id="LOCAL-00001" summary="insert to DB">
       <created>1460751657892</created>
@@ -416,7 +370,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70676000" />
+    <option name="totallyTimeSpent" value="76177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -484,14 +438,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/controller_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -621,14 +567,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/gallery_view.php" />
     <entry file="file://$PROJECT_DIR$/application/views/edit_view.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/template_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/core/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -677,20 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <marker date="1460981530283" expanded="true" signature="144:166" placeholder="SELECT title... pictures" />
-            <marker date="1460981530283" expanded="true" signature="354:389" placeholder="DELETE FROM " />
-            <marker date="1460981530283" expanded="true" signature="616:658" placeholder="SELECT * FRO... pictures" />
-            <marker date="1460981530283" expanded="true" signature="855:895" placeholder="SELECT * FRO... pictures" />
-            <marker date="1460981530283" expanded="true" signature="1093:1143" placeholder="UPDATE pictu... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/add_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -703,14 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -733,26 +649,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1460981530283" expanded="true" signature="144:166" placeholder="SELECT title... pictures" />
+            <marker date="1460981530283" expanded="true" signature="354:389" placeholder="DELETE FROM " />
+            <marker date="1460981530283" expanded="true" signature="616:658" placeholder="SELECT * FRO... pictures" />
+            <marker date="1460981530283" expanded="true" signature="855:895" placeholder="SELECT * FRO... pictures" />
+            <marker date="1460981530283" expanded="true" signature="1093:1143" placeholder="UPDATE pictu... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getAjax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/editTitle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/getAjax.js">
+    <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding />
         </state>
       </provider>

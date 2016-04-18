@@ -18,6 +18,11 @@ $(document).ready(function() {
         $.get("http://laravel.local/main/delete/" + id + "");
         window.location.href = "http://laravel.local/";
     });
-    
-    
+
+    var loc = window.location.toString();
+    if(loc == 'http://laravel.local/add') {
+        $('ul.nav').find('li').addClass('active');
+    }else {
+        $('ul.nav').find('li').removeClass('active');
+    }
 });

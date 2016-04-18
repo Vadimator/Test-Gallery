@@ -54,7 +54,11 @@
 
 	<div id="footer">
 		<div class="container text-center">
-			<p class="text-muted">&copy; <?=date('Y');?> Gallery, Inc.</p>
+			<p class="text-muted">&copy; <?=date('Y');?> Gallery, Inc.
+				<a href="https://github.com/Vadimator/Test-Gallery" title="github">
+					<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+				</a>
+			</p>
 		</div>
 	</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

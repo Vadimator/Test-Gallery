@@ -25,8 +25,8 @@ class Controller_add extends Controller {
                 $this->model->insertImage($title, $_FILES['image']['size'], $uploadfile);
                 $this->redirect('main');
             }else {
-                $errorFile = 'Размер файла не должен привышать 1мб и разрешены только jpg, jpeg, png';
-                $this->view->generate('add_view.php', 'template_view.php', $errorFile);
+                $data = 'Размер файла не должен привышать 1мб и разрешены только jpg, jpeg, png';
+                $this->view->generate('add_view.php', 'template_view.php', $data);
             }
         }else {
             $this->view->generate('add_view.php', 'template_view.php');

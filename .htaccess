@@ -1,11 +1,5 @@
 AddDefaultCharset UTF-8
 
-
-php_value mbstring.language "Russian"
-php_value mbstring.http_input "auto"
-php_value mbstring.http_output "utf-8"
-php_value mbstring.encoding_translation "On"
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

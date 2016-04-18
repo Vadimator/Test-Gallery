@@ -3,7 +3,7 @@
 $(document).ready(function() {
     $('.gallery p').find('button').click(function() {
         var text = $(this).parent().find('span').html();
-        $(this).parent().find('span').replaceWith("<input type='text' id='exampleInputFile' name='description' maxlength='200' class='form-control' value=" + text + ">");
+        $(this).parent().find('span').replaceWith("<input type='text' id='exampleInputFile' name='description'  maxlength='200' class='form-control' value=" + text + ">");
 
         var inputTag = $(this).parent().find('input');
         var idBtn    = $(this).attr('id');

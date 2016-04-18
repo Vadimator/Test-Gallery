@@ -9,10 +9,8 @@
 
 <ul class="gallery col-md-12">
     <?php foreach ($data as $row) : ?>
-        <li class="text-center">
-            <a href="http://<?php echo $_SERVER['HTTP_HOST'] . '/main/delete/'. $row['id'] .''; ?>">
-                <button type="button" class="close" aria-hidden="true">&times;</button>
-            </a>
+        <li class="text-center container-fluid">
+            <button type="button"  class="close" aria-hidden="true" data="<?php echo $row['id']; ?>">&times;</button>
             <img src="<?php if(($_SERVER['REQUEST_URI'] == '/main/sortSize') || ($_SERVER['REQUEST_URI'] == '/main/sortDate')) {
                 echo '../' . $row['img'];
             }else {

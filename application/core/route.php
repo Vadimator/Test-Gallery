@@ -61,8 +61,10 @@ class Route
 		
 		if(method_exists($controller, $action)) {
 			// вызываем действие контроллера
-			if(empty($parameter)) {
+			if(empty($id) && empty($parameter)) {
 				$controller->$action();
+			}elseif(empty($parameter)) {
+				$controller->$action($id);
 			}else {
 				$controller->$action($id, $parameter);
 			}

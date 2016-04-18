@@ -20,12 +20,11 @@ ul.gallery {
 	margin-top: 50px;
 	margin-bottom: 60px;
 }
-ul.gallery li{
+
+ul.gallery li  {
 	display: inline-block;
 }
 .close {
-	position: relative;
-	left: -20px;
-	top: 5px;
+
 	color: #fff !important;
 }

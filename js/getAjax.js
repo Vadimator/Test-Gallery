@@ -12,4 +12,12 @@ $(document).ready(function() {
             $('body').html(data);
         });
     });
+
+    $('.close').click(function() {
+        var id = $(this).attr('data');
+        $.get("http://laravel.local/main/delete/" + id + "");
+        window.location.href = "http://laravel.local/";
+    });
+    
+    
 });

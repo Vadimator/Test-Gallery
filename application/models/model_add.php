@@ -1,12 +1,7 @@
 <?php
 
 class Model_add extends Model {
-
-    public function getImg()
-    {
-        return 'vadim';
-    }
-
+    
     public function validationText($text)
     {
         return trim(htmlspecialchars($text));

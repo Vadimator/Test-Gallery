@@ -11,6 +11,26 @@ class Model_main extends Model {
         return $result;
     }
 
+    public function getImgLimit($start, $limit)
+    {
+        $db = $this->getConnect();
+        $sth = $db->prepare("SELECT * FROM pictures LIMIT :offset, :limit");
+        $sth->bindValue(':offset', (int) $start, PDO::PARAM_INT);
+        $sth->bindValue(':limit', (int) $limit, PDO::PARAM_INT);
+        $sth->execute();
+        $result = $sth->fetchAll();
+        return $result;
+    }
+
+    public function getCountArticles()
+    {
+        $db = $this->getConnect();
+        $sth = $db->prepare("SELECT COUNT(id) as size FROM pictures");
+        $sth->execute();
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
     public function deleteImg($id)
     {
         $db = $this->getConnect();
@@ -20,19 +40,30 @@ class Model_main extends Model {
         $stmt->execute();
     }
 
-    public function sortDate()
+    public function sortDate($sort='ASC', $offset, $limit)
     {
         $db = $this->getConnect();
-        $sth = $db->prepare("SELECT * FROM pictures ORDER BY uploadDate");
+
+        if($sort == 'DESC') {
+            $sth = $db->prepare("SELECT * FROM pictures ORDER BY uploadDate DESC LIMIT :offset, :limit");
+        }else {
+            $sth = $db->prepare("SELECT * FROM pictures ORDER BY uploadDate ASC LIMIT :offset, :limit");
+        }
+        $sth->bindValue(':offset', (int) $offset, PDO::PARAM_INT);
+        $sth->bindValue(':limit', (int) $limit, PDO::PARAM_INT);
         $sth->execute();
         $result = $sth->fetchAll();
         return $result;
     }
 
-    public function sortSize()
+    public function sortSize($sort='ASC')
     {
         $db = $this->getConnect();
-        $sth = $db->prepare("SELECT * FROM pictures ORDER BY sizeFile");
+        if($sort == 'DESC') {
+            $sth = $db->prepare("SELECT * FROM pictures ORDER BY sizeFile DESC");
+        }else {
+            $sth = $db->prepare("SELECT * FROM pictures ORDER BY sizeFile ASC");
+        }
         $sth->execute();
         $result = $sth->fetchAll();
         return $result;

@@ -10,8 +10,12 @@ class Controller_Main extends Controller {
 	
 	public function action_index()
 	{
-		$data = $this->model->getImg();
-		$this->view->generate('main_view.php', 'template_view.php', $data);
+		$limit = 3;
+		$getCountId = $this->model->getCountArticles();
+		$count = ceil($getCountId[0]['size'] / $limit);
+		
+		$data = $this->model->getImgLimit(0, 3);
+		$this->view->generate('main_view.php', 'template_view.php', $data, $count);
 	}
 
 	public function action_delete($id)
@@ -26,15 +30,43 @@ class Controller_Main extends Controller {
 		$this->redirect('main');
 	}
 	
-	public function action_sortDate()
+	public function action_sortDate($sort , $id)
 	{
-		$data = $this->model->sortDate();
+		$limit = 3;
+		$getCountId = $this->model->getCountArticles();
+		$count = ceil($getCountId[0]['size'] / $limit);
+
+		if($id < 0 || $id >= $count) {
+			$this->view->generate('404_view.php', 'template_view.php');
+		}elseif($id == 0) {
+			$this->redirect('main');
+		}else {
+			$data = $this->model->sortDate($sort, $id, 3);
+			$this->view->generate('main_view.php', 'template_view.php', $data, $count);
+		}
+	}
+
+	public function action_sortSize($sort)
+	{
+		$data = $this->model->sortSize($sort);
 		$this->view->generate('main_view.php', 'template_view.php', $data);
 	}
 
-	public function action_sortSize()
+	public function action_page($id)
 	{
-		$data = $this->model->sortSize();
-		$this->view->generate('main_view.php', 'template_view.php', $data);
+		$limit = 3;
+		$getCountId = $this->model->getCountArticles();
+		$count = ceil($getCountId[0]['size'] / $limit);
+
+		if($id < 0 || $id >= $count) {
+			$this->view->generate('404_view.php', 'template_view.php');
+		}elseif($id == 0) {
+			$this->redirect('main');
+		}
+		else {
+			$data = $this->model->getImgLimit($id * 3, $limit);
+			$this->view->generate('main_view.php', 'template_view.php', $data, $count);
+		}
+
 	}
 }

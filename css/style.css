@@ -20,11 +20,19 @@ body {
 textarea {
 	resize: none;
 }
+#sortDateASC, #sortDateDESC, #sortSizeASC, #sortSizeDESC {
+	margin: 5px;
+}
 ul.gallery {
 	margin-top: 50px;
 	margin-bottom: 60px;
+	width:100% !important;;
 }
-
+select {
+	margin: 10px 0 !important;
+	height: 45px !important;
+	text-align: center;
+}
 ul.gallery li {
 	display: inline-block;
 	margin: 10px 0;
@@ -42,7 +50,12 @@ ul.gallery li {
 	top: 5px;
 	color: #fff !important;
 }
-
+.pagination {
+	margin-bottom: 100px !important;
+}
+ul.pagination li {
+	cursor: pointer;
+}
 @media (max-width: 768px) {
 	.collapse{
 		text-align: center !important;

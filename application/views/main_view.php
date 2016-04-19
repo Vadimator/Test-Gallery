@@ -18,11 +18,26 @@
         <?php $srcImg = '/main/page/' . $row['id'] . ''; ?>
         <li class="text-center container-fluid">
             <button type="button" title="удалить" class="close" aria-hidden="true" data="<?php echo $row['id']; ?>">&times;</button>
-            <img src="<?php if(($_SERVER['REQUEST_URI'] == '/main')) {
+            <div class="image col<?php echo $row['id']; ?>">
+                <style>
+                    .col<?php echo $row['id']; ?>{
+                        background: url("<?php if(($_SERVER['REQUEST_URI'] == '/main')) {
+                                                    echo $row['img'];
+                                               }else {
+                                                     echo '../../' . $row['img'];
+                                                }?>");
+                    }
+                </style>
+            </div>
+
+
+            <!--<img src="<?php if(($_SERVER['REQUEST_URI'] == '/main')) {
                 echo $row['img'];
             }else {
                 echo '../../' . $row['img'];
-            }?>" alt="<?php echo $row['title']; ?>" width="200" height="200" class="img-rounded"><br>
+            }?>" alt="<?php echo $row['title']; ?>"  class="img-rounded"><br>-->
+
+            
             <small><?php echo $row['uploadDate']; ?></small>
             <br>
             <div class="title-text"><div class="title"><?php echo $row['title']; ?></div>

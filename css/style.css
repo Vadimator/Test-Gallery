@@ -50,6 +50,13 @@ ul.gallery li {
 	top: 5px;
 	color: #fff !important;
 }
+.image {
+	width: 200px;
+	height: 200px;
+	background-size: cover !important;
+	background-position: center !important;
+	margin: 0 auto;
+}
 .pagination {
 	margin-bottom: 100px !important;
 }

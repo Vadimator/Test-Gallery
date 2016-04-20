@@ -5,9 +5,9 @@ $(document).ready(function() {
     var href = window.location.href;
     var host = window.location.host;
 
-
+    /*
     $('#sortDateASC').click(function() {
-        $.get('http://' + window.location.host + '/main/sortDate/ASC', function(data){
+        $.get('http://' + window.location.host + '/main/sortDate/ASC/', function(data){
             $('body').html(data);
         });
     });
@@ -17,6 +17,7 @@ $(document).ready(function() {
             $('body').html(data);
         });
     });
+    */
 
     $('#sortSizeASC').click(function() {
         $.get('http://' + window.location.host + '/main/sortSize/ASC', function(data){

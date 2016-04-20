@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154575f9-72f0-4e62-8f11-95a9038aa138" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/main_view.php" afterPath="$PROJECT_DIR$/application/views/main_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadsFile/mbuntu (8).jpg" afterPath="$PROJECT_DIR$/uploadsFile/mbuntu (8).jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/controller_main.php" afterPath="$PROJECT_DIR$/application/controllers/controller_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/model_main.php" afterPath="$PROJECT_DIR$/application/models/model_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getAjax.js" afterPath="$PROJECT_DIR$/js/getAjax.js" />
     </list>
     <ignored path="laravel.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,43 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-              <folding>
-                <marker date="1461087255327" expanded="true" signature="1014:1056" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/core/controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller_main.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller_main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/controller_main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="-366">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,22 +41,39 @@
       <file leaf-file-name="model_main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
               <folding>
-                <marker date="1461078416627" expanded="true" signature="144:166" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="380:418" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="380:424" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="760:798" placeholder="SELECT COUNT... " />
-                <marker date="1461078416627" expanded="true" signature="1002:1037" placeholder="DELETE FROM " />
-                <marker date="1461078416627" expanded="true" signature="1327:1374" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="1327:1396" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="1449:1495" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="1449:1517" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="1901:1946" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="1999:2043" placeholder="SELECT * FRO... pictures" />
-                <marker date="1461078416627" expanded="true" signature="2251:2301" placeholder="UPDATE pictu... " />
+                <marker date="1461143093067" expanded="true" signature="1442:1480" placeholder="SELECT COUNT... " />
+                <marker date="1461143093067" expanded="true" signature="1684:1719" placeholder="DELETE FROM " />
+                <marker date="1461143093067" expanded="true" signature="1984:2052" placeholder="SELECT * FRO... pictures" />
+                <marker date="1461143093067" expanded="true" signature="2421:2490" placeholder="SELECT * FRO... pictures" />
+                <marker date="1461143093067" expanded="true" signature="2859:2926" placeholder="SELECT * FRO... pictures" />
+                <marker date="1461143093067" expanded="true" signature="3293:3359" placeholder="SELECT * FRO... pictures" />
+                <marker date="1461143093067" expanded="true" signature="3690:3740" placeholder="UPDATE pictu... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <folding>
+                <marker date="1461087255327" expanded="true" signature="1014:1056" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getAjax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/getAjax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,14 +116,14 @@
         <option value="$PROJECT_DIR$/application/controllers/controller_add.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/application/core/view.php" />
-        <option value="$PROJECT_DIR$/js/getAjax.js" />
         <option value="$PROJECT_DIR$/js/paginator.js" />
         <option value="$PROJECT_DIR$/application/views/template_view.php" />
         <option value="$PROJECT_DIR$/js/editTitle.js" />
-        <option value="$PROJECT_DIR$/application/models/model_main.php" />
-        <option value="$PROJECT_DIR$/application/controllers/controller_main.php" />
         <option value="$PROJECT_DIR$/application/views/main_view.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/getAjax.js" />
+        <option value="$PROJECT_DIR$/application/models/model_main.php" />
+        <option value="$PROJECT_DIR$/application/controllers/controller_main.php" />
       </list>
     </option>
   </component>
@@ -367,7 +355,7 @@
       <workItem from="1460805093943" duration="3824000" />
       <workItem from="1460927592202" duration="2969000" />
       <workItem from="1460965816620" duration="32426000" />
-      <workItem from="1461014672278" duration="22480000" />
+      <workItem from="1461014672278" duration="31470000" />
     </task>
     <task id="LOCAL-00001" summary="insert to DB">
       <created>1460751657892</created>
@@ -380,7 +368,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102709000" />
+    <option name="totallyTimeSpent" value="111699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -443,7 +431,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -453,18 +441,13 @@
         <state relative-caret-position="135">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <marker date="1461078416627" expanded="true" signature="144:166" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:418" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:424" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="760:798" placeholder="SELECT COUNT... " />
-            <marker date="1461078416627" expanded="true" signature="1002:1037" placeholder="DELETE FROM " />
-            <marker date="1461078416627" expanded="true" signature="1327:1374" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1327:1396" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1495" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1517" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1901:1946" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1999:2043" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="2251:2301" placeholder="UPDATE pictu... " />
+            <marker date="1461143093067" expanded="true" signature="1442:1480" placeholder="SELECT COUNT... " />
+            <marker date="1461143093067" expanded="true" signature="1684:1719" placeholder="DELETE FROM " />
+            <marker date="1461143093067" expanded="true" signature="1984:2052" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2421:2490" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2859:2926" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3293:3359" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3690:3740" placeholder="UPDATE pictu... " />
           </folding>
         </state>
       </provider>
@@ -484,18 +467,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461078416627" expanded="true" signature="144:166" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:418" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:424" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="760:798" placeholder="SELECT COUNT... " />
-            <marker date="1461078416627" expanded="true" signature="1002:1037" placeholder="DELETE FROM " />
-            <marker date="1461078416627" expanded="true" signature="1327:1374" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1327:1396" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1495" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1517" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1901:1946" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1999:2043" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="2251:2301" placeholder="UPDATE pictu... " />
+            <marker date="1461143093067" expanded="true" signature="1442:1480" placeholder="SELECT COUNT... " />
+            <marker date="1461143093067" expanded="true" signature="1684:1719" placeholder="DELETE FROM " />
+            <marker date="1461143093067" expanded="true" signature="1984:2052" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2421:2490" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2859:2926" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3293:3359" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3690:3740" placeholder="UPDATE pictu... " />
           </folding>
         </state>
       </provider>
@@ -684,32 +662,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/getAjax.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="68" />
+        <state relative-caret-position="429">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <marker date="1461078416627" expanded="true" signature="144:166" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:418" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="380:424" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="760:798" placeholder="SELECT COUNT... " />
-            <marker date="1461078416627" expanded="true" signature="1002:1037" placeholder="DELETE FROM " />
-            <marker date="1461078416627" expanded="true" signature="1327:1374" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1327:1396" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1495" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1449:1517" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1901:1946" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="1999:2043" placeholder="SELECT * FRO... pictures" />
-            <marker date="1461078416627" expanded="true" signature="2251:2301" placeholder="UPDATE pictu... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,9 +678,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/getAjax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/main_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="189">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
             <marker date="1461087255327" expanded="true" signature="1014:1056" placeholder="{...}" />
@@ -731,18 +696,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/controller_main.php">
+    <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <marker date="1461143093067" expanded="true" signature="1442:1480" placeholder="SELECT COUNT... " />
+            <marker date="1461143093067" expanded="true" signature="1684:1719" placeholder="DELETE FROM " />
+            <marker date="1461143093067" expanded="true" signature="1984:2052" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2421:2490" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="2859:2926" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3293:3359" placeholder="SELECT * FRO... pictures" />
+            <marker date="1461143093067" expanded="true" signature="3690:3740" placeholder="UPDATE pictu... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/application/controllers/controller_main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="-366">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>

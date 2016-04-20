@@ -1,9 +1,9 @@
 <?php
+session_start();
 
 class Controller_Main extends Controller {
 
 	private $limit = 3;
-    private $method;
 
 	public function __construct()
 	{
@@ -11,15 +11,33 @@ class Controller_Main extends Controller {
 		$this->view = new View();
 	}
 
-
 	public function action_sortDateDesc()
 	{
-
+        $_SESSION['method'] = 'sortDateDesc';
+        $this->redirect('main');
 	}
 
-	public function action_index()
+    public function action_sortDateAsc()
+    {
+        $_SESSION['method'] = 'sortDateASC';
+        $this->redirect('main');
+    }
+
+    public function action_sortFileDesc()
+    {
+        $_SESSION['method'] = 'sortFileDesc';
+        $this->redirect('main');
+    }
+
+    public function action_sortFileAsc()
+    {
+        $_SESSION['method'] = 'sortFileASC';
+        $this->redirect('main');
+    }
+
+    public function action_index()
 	{
-		$data = $this->model->getImgLimit(0, $this->limit, $this->method);
+		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
 		$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
 	}
 
@@ -34,60 +52,6 @@ class Controller_Main extends Controller {
 		$this->model->updateTitle($id, urldecode($title));
 		$this->redirect('main');
 	}
-
-    
-
-	/*date ASC
-	public function action_sortDateAsc($id)
-	{
-		if($id < 0 || $id >= $this->getCount()) {
-			$this->view->generate('404_view.php', 'template_view.php');
-		}elseif($id == 0) {
-			$this->redirect('main');
-		}else {
-			$data = $this->model->sortDateAsc($id, $this->limit);
-			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
-		}
-	}
-	
-	//date DESC
-	public function action_sortDateDesc($id)
-	{
-		if($id < 0 || $id >= $this->getCount()) {
-			$this->view->generate('404_view.php', 'template_view.php');
-		}elseif($id == 0) {
-			$this->redirect('main');
-		}else {
-			$data = $this->model->sortDateDesc($id, $this->limit);
-			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
-		}
-	}
-
-	//file DESC
-	public function action_sortSizeDesc($id)
-	{
-		if($id < 0 || $id >= $this->getCount()) {
-			$this->view->generate('404_view.php', 'template_view.php');
-		}elseif($id == 0) {
-			$this->redirect('main');
-		}else {
-			$data = $this->model->sortFileDesc($id, $this->limit);
-			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
-		}
-	}
-
-	//file ASC
-	public function action_sortSizeAsc($id)
-	{
-		if($id < 0 || $id >= $this->getCount()) {
-			$this->view->generate('404_view.php', 'template_view.php');
-		}elseif($id == 0) {
-			$this->redirect('main');
-		}else {
-			$data = $this->model->sortFileASC($id, $this->limit);
-			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
-		}
-	}*/
 
 	private function getCount()
 	{
@@ -104,7 +68,7 @@ class Controller_Main extends Controller {
 			$this->redirect('main');
 		}
 		else {
-			$data = $this->model->getImgLimit($id * 3, $this->limit, $this->method);
+			$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
 			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
 		}
 

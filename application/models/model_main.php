@@ -1,7 +1,16 @@
 <?php
 
+/**
+ * Class Model_main
+ */
 class Model_main extends Model {
-    
+
+    /**
+     * @param $start
+     * @param $limit
+     * @param $method
+     * @return array
+     */
     public function getImgLimit($start, $limit, $method)
     {
         switch ($method) {
@@ -23,6 +32,9 @@ class Model_main extends Model {
         }
     }
 
+    /**
+     * @return array
+     */
     public function getCountArticles()
     {
         $db = $this->getConnect();
@@ -32,6 +44,9 @@ class Model_main extends Model {
         return $result;
     }
 
+    /**
+     * @param $id
+     */
     public function deleteImg($id)
     {
         $db = $this->getConnect();
@@ -42,6 +57,11 @@ class Model_main extends Model {
     }
 
     //sort ASC date
+    /**
+     * @param $offset
+     * @param $limit
+     * @return array
+     */
     public function sortDateAsc($offset, $limit)
     {
         $db = $this->getConnect();
@@ -54,6 +74,11 @@ class Model_main extends Model {
     }
 
     //sort DESC date
+    /**
+     * @param $offset
+     * @param $limit
+     * @return array
+     */
     public function sortDateDesc($offset, $limit)
     {
         $db = $this->getConnect();
@@ -66,6 +91,11 @@ class Model_main extends Model {
     }
 
     //sort DESC file
+    /**
+     * @param $offset
+     * @param $limit
+     * @return array
+     */
     public function sortFileDesc($offset, $limit)
     {
         $db = $this->getConnect();
@@ -78,6 +108,11 @@ class Model_main extends Model {
     }
 
     //sort ASC file
+    /**
+     * @param $offset
+     * @param $limit
+     * @return array
+     */
     public function sortFileASC($offset, $limit)
     {
         $db = $this->getConnect();
@@ -90,6 +125,10 @@ class Model_main extends Model {
     }
 
 
+    /**
+     * @param $id
+     * @param $title
+     */
     public function updateTitle($id, $title)
     {
         $db = $this->getConnect();
@@ -99,13 +138,20 @@ class Model_main extends Model {
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
     }
-    
 
+
+    /**
+     * @param $str
+     * @return mixed
+     */
     public function deleteSpace($str)
     {
         return preg_replace('/%20/', " ", $str);
     }
 
+    /**
+     * @return PDO
+     */
     private function getConnect()
     {
         return new PDO('mysql:host=' . Database::DB_SERVER .';dbname=' . Database::DB_NAME . '', Database::DB_USER, Database::DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));

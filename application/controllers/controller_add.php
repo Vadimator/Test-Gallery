@@ -19,7 +19,8 @@ class Controller_add extends Controller {
             if(($_FILES['image']['type'] == 'image/jpeg' || $_FILES['image']['type'] == 'image/png' || $_FILES['image']['type'] == 'image/jpg') && ($_FILES['image']['size'] < 1000000)) {
                 $title = $this->model->validationText($_POST['description']);
                 // Сохраняет файл в папке uploadsFile
-                $uploadfile = "uploadsFile/".$_FILES['image']['name'];
+                $nameFile = $this->model->deleteSpaceOnImage($_FILES['image']['name']);
+                $uploadfile = "uploadsFile/".$nameFile;
                 move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
                 //Добавляем в базу данных
                 $this->model->insertImage($title, $_FILES['image']['size'], $uploadfile);

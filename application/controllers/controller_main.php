@@ -2,16 +2,21 @@
 
 class Controller_Main extends Controller {
 
-	private $method = 'sortFileDesc';
 	private $limit = 3;
-
+    private $method;
 
 	public function __construct()
 	{
 		$this->model = new Model_main();
 		$this->view = new View();
 	}
-	
+
+
+	public function action_sortDateDesc()
+	{
+
+	}
+
 	public function action_index()
 	{
 		$data = $this->model->getImgLimit(0, $this->limit, $this->method);
@@ -30,7 +35,9 @@ class Controller_Main extends Controller {
 		$this->redirect('main');
 	}
 
-	//date ASC
+    
+
+	/*date ASC
 	public function action_sortDateAsc($id)
 	{
 		if($id < 0 || $id >= $this->getCount()) {
@@ -80,7 +87,7 @@ class Controller_Main extends Controller {
 			$data = $this->model->sortFileASC($id, $this->limit);
 			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
 		}
-	}
+	}*/
 
 	private function getCount()
 	{

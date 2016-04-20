@@ -49,6 +49,7 @@ ul.gallery li {
 	left: -50%;
 	top: 5px;
 	color: #fff !important;
+	z-index : 999;
 }
 .image {
 	width: 200px;

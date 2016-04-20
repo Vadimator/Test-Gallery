@@ -26,6 +26,10 @@ class Model_add extends Model {
         $db = NULL;
     }
 
+    public function deleteSpaceOnImage($img)
+    {
+        return str_replace(' ', '', $img);
+    }
     private function getConnect()
     {
         return new PDO('mysql:host=' . Database::DB_SERVER .';dbname=' . Database::DB_NAME . '', Database::DB_USER, Database::DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));

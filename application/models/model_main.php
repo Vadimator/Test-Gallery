@@ -3,8 +3,7 @@
 class Model_main extends Model {
     
     public function getImgLimit($start, $limit, $method)
-    {   
-        
+    {
         switch ($method) {
             case 'sortDateASC' :
                 return $this->sortDateAsc($start, $limit);
@@ -22,29 +21,6 @@ class Model_main extends Model {
                 return $this->sortDateAsc($start, $limit);
                 break;
         }
-        /* sortDateASC
-        if($this->sortDateAsc($start, $limit)) {
-            return $this->sortDateAsc($start, $limit);
-        }
-        */
-
-        /* sortDateDesc
-        if($this->sortDateDesc($start, $limit)) {
-            return $this->sortDateDesc($start, $limit);
-        }
-        */
-
-        /* sortFileDesc
-        if($this->sortFileDesc($start, $limit)) {
-            return $this->sortFileDesc($start, $limit);
-        }
-        */
-
-        /* sortFileASC
-        if($this->sortFileASC($start, $limit)) {
-            return $this->sortFileASC($start, $limit);
-        }
-        */
     }
 
     public function getCountArticles()
@@ -123,6 +99,7 @@ class Model_main extends Model {
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
     }
+    
 
     public function deleteSpace($str)
     {

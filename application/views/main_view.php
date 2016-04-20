@@ -18,8 +18,9 @@
         <?php $srcImg = '/main/page/' . $row['id'] . ''; ?>
         <li class="text-center container-fluid">
             <button type="button" title="удалить" class="close" aria-hidden="true" data="<?php echo $row['id']; ?>">&times;</button>
-            <div class="image col<?php echo $row['id']; ?>">
-                <style>
+            <a href="<?php echo  '/' . $row['img']; ?>" data-rel="lightcase:myCollection:slideshow">
+                <div class="image col<?php echo $row['id']; ?>">
+                    <style>
                     .col<?php echo $row['id']; ?>{
                         background: url("<?php if(($_SERVER['REQUEST_URI'] == '/main')) {
                                                     echo $row['img'];
@@ -27,8 +28,9 @@
                                                      echo '../../' . $row['img'];
                                                 }?>");
                     }
-                </style>
-            </div>
+                    </style>
+                </div>
+            </a>
 
 
             <!--<img src="<?php if(($_SERVER['REQUEST_URI'] == '/main')) {
@@ -58,3 +60,4 @@
         </ul>
     </nav>
 </div>
+

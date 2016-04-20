@@ -45,7 +45,9 @@ $(document).ready(function() {
     }else {
         $('ul.nav').find('li').removeClass('active');
     }
-    
-    
+
+
+    $('a[data-rel^=lightcase]').lightcase();
+
     
 });

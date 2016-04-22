@@ -1,3 +1,4 @@
+<div class="addForm container-fluid">
 <h1>Добавление новой картинки</h1>
 
 <form role="form" enctype="multipart/form-data" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'] . '/add/store'; ?> ">
@@ -12,3 +13,4 @@
     </div>
     <input class="btn btn-default" type="submit" value="Загрузить">
 </form>
+</div>

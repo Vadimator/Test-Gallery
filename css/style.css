@@ -2,8 +2,14 @@
 	position: relative;
 	min-height: 100%;
 }
+a {
+	cursor: pointer;
+}
 body {
 	margin-bottom: 60px;
+}
+.navbar {
+	width: 100% !important;
 }
 #footer {
 	position: absolute;
@@ -49,7 +55,7 @@ ul.gallery li {
 	left: -50%;
 	top: 5px;
 	color: #fff !important;
-	z-index : 999;
+	z-index : 999 !important;
 }
 .image {
 	width: 200px;

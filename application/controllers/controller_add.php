@@ -10,7 +10,7 @@ class Controller_add extends Controller {
 
     public function action_index()
     {
-        $this->view->generate('add_view.php', 'template_view.php');
+        $this->view->generate('add_view.php');
     }
 
     public function action_store()
@@ -24,13 +24,17 @@ class Controller_add extends Controller {
                 move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
                 //Добавляем в базу данных
                 $this->model->insertImage($title, $_FILES['image']['size'], $uploadfile);
-                $this->redirect('main');
+                $this->redirect('');
             }else {
                 $data = 'Размер файла не должен привышать 1мб и разрешены только jpg, jpeg, png';
-                $this->view->generate('add_view.php', 'template_view.php', $data);
+                $this->view->generate('layouts/header_view.php');
+                $this->view->generate('add_view.php', $data);
+                $this->view->generate('layouts/footer_view.php');
             }
         }else {
-            $this->view->generate('add_view.php', 'template_view.php');
+            $this->view->generate('layouts/header_view.php');
+            $this->view->generate('add_view.php');
+            $this->view->generate('layouts/footer_view.php');
         }
 
     }

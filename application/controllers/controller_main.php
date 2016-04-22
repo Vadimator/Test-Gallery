@@ -25,8 +25,10 @@ class Controller_Main extends Controller {
      */
 	public function action_sortDateDesc()
 	{
-        $_SESSION['method'] = 'sortDateDesc';
-        $this->redirect('main');
+		$_SESSION['method'] = 'sortDateDesc';
+		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$this->view->generate('main_view.php', $data, $this->getCount());
+
 	}
 
 	/**
@@ -34,35 +36,36 @@ class Controller_Main extends Controller {
      */
 	public function action_sortDateAsc()
     {
-        $_SESSION['method'] = 'sortDateASC';
-        $this->redirect('main');
+		$_SESSION['method'] = 'sortDateASC';
+		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 
-	/**
-	 *
-     */
+
 	public function action_sortFileDesc()
     {
-        $_SESSION['method'] = 'sortFileDesc';
-        $this->redirect('main');
+		$_SESSION['method'] = 'sortFileDesc';
+		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 
-	/**
-	 *
-     */
+
 	public function action_sortFileAsc()
     {
-        $_SESSION['method'] = 'sortFileASC';
-        $this->redirect('main');
+		$_SESSION['method'] = 'sortFileASC';
+		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 
-	/**
-	 *
-     */
+
 	public function action_index()
 	{
-		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
+		$data = $this->model->getImgLimit(0, $this->limit);
+		$this->view->generate('layouts/header_view.php');
+		$this->view->generate('layouts/main/top_main_view.php');
+		$this->view->generate('main_view.php', $data);
+		$this->view->generate('layouts/main/bottom_main_view.php', null,$this->getCount());
+		$this->view->generate('layouts/footer_view.php');
 	}
 
 	/**
@@ -99,15 +102,7 @@ class Controller_Main extends Controller {
      */
 	public function action_page($id)
 	{
-		if($id < 0 || $id >= $this->getCount()) {
-			$this->view->generate('404_view.php', 'template_view.php');
-		}elseif($id == 0) {
-			$this->redirect('main');
-		}
-		else {
-			$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-			$this->view->generate('main_view.php', 'template_view.php', $data, $this->getCount());
-		}
-
+		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
+		$this->view->generate('main_view.php', $data, $this->getCount());
 	}
 }

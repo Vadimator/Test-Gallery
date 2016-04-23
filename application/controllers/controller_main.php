@@ -23,10 +23,10 @@ class Controller_Main extends Controller {
 	/**
 	 *
      */
-	public function action_sortDateDesc()
+	public function action_sortDateDesc($id)
 	{
 		$_SESSION['method'] = 'sortDateDesc';
-		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
 		$this->view->generate('main_view.php', $data, $this->getCount());
 
 	}
@@ -34,26 +34,26 @@ class Controller_Main extends Controller {
 	/**
 	 *
      */
-	public function action_sortDateAsc()
+	public function action_sortDateAsc($id)
     {
 		$_SESSION['method'] = 'sortDateASC';
-		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
 		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 
 
-	public function action_sortFileDesc()
+	public function action_sortFileDesc($id)
     {
 		$_SESSION['method'] = 'sortFileDesc';
-		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
 		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 
 
-	public function action_sortFileAsc()
+	public function action_sortFileAsc($id)
     {
 		$_SESSION['method'] = 'sortFileASC';
-		$data = $this->model->getImgLimit(0, $this->limit, $_SESSION['method']);
+		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
 		$this->view->generate('main_view.php', $data, $this->getCount());
     }
 

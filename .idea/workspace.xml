@@ -2,21 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154575f9-72f0-4e62-8f11-95a9038aa138" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/www/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/test.local.iml" afterPath="$PROJECT_DIR$/.idea/test.local.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/.htaccess" afterPath="$PROJECT_DIR$/www/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/README.md" afterPath="$PROJECT_DIR$/www/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/bootstrap.php" afterPath="$PROJECT_DIR$/www/application/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/controllers/controller_404.php" afterPath="$PROJECT_DIR$/www/application/controllers/controller_404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/controllers/controller_add.php" afterPath="$PROJECT_DIR$/www/application/controllers/controller_add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/controllers/controller_main.php" afterPath="$PROJECT_DIR$/www/application/controllers/controller_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/core/controller.php" afterPath="$PROJECT_DIR$/www/application/core/controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/core/model.php" afterPath="$PROJECT_DIR$/www/application/core/model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/core/route.php" afterPath="$PROJECT_DIR$/www/application/core/route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/core/view.php" afterPath="$PROJECT_DIR$/www/application/core/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/models/model_add.php" afterPath="$PROJECT_DIR$/www/application/models/model_add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/models/model_main.php" afterPath="$PROJECT_DIR$/www/application/models/model_main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/views/404_view.php" afterPath="$PROJECT_DIR$/www/application/views/404_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/views/add_view.php" afterPath="$PROJECT_DIR$/www/application/views/add_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/views/layouts/template_view.php" afterPath="$PROJECT_DIR$/www/application/views/layouts/template_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/views/main_view.php" afterPath="$PROJECT_DIR$/www/application/views/main_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/application/views/template_view.php" afterPath="$PROJECT_DIR$/www/application/views/template_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/config/database.php" afterPath="$PROJECT_DIR$/www/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/www/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/www/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/www/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/www/fonts/fontawesome-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.php" afterPath="$PROJECT_DIR$/www/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/www/js/bootstrap.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/getAjax.js" afterPath="$PROJECT_DIR$/www/js/getAjax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/jquery-1.12.3.min.js" afterPath="$PROJECT_DIR$/www/js/jquery-1.12.3.min.js" />
     </list>
     <ignored path="laravel.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -139,6 +164,7 @@
         <option value="$PROJECT_DIR$/www/application/controllers/controller_main.php" />
         <option value="$PROJECT_DIR$/www/js/getAjax.js" />
         <option value="$PROJECT_DIR$/.gitigore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -199,6 +225,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,9 +340,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239584" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239584" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -560,7 +600,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>

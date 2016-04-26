@@ -1,108 +1,76 @@
 <?php
-session_start();
 
 /**
  * Class Controller_Main
  */
-class Controller_Main extends Controller {
+class Controller_Main extends Controller
+{
 
-	/**
-	 * @var int
+    /**
+     * @var int
      */
-	private $limit = 3;
+    private $limit = 3;
 
-	/**
-	 * Controller_Main constructor.
+    /**
+     * Controller_Main constructor.
      */
-	public function __construct()
-	{
-		$this->model = new Model_main();
-		$this->view = new View();
-	}
-
-	/**
-	 *
-     */
-	public function action_sortDateDesc($id)
-	{
-		$_SESSION['method'] = 'sortDateDesc';
-		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', $data, $this->getCount());
-
-	}
-
-	/**
-	 *
-     */
-	public function action_sortDateAsc($id)
+    public function __construct()
     {
-		$_SESSION['method'] = 'sortDateASC';
-		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', $data, $this->getCount());
+        $this->model = new Model_main();
+        $this->view = new View();
     }
 
-
-	public function action_sortFileDesc($id)
+    public function action_sort($method_sort, $id)
     {
-		$_SESSION['method'] = 'sortFileDesc';
-		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', $data, $this->getCount());
+        $data = $this->model->getImgLimit($id * 3, $this->limit, $method_sort);
+        $this->view->generate('main_view.php', $data, $this->getCount());
     }
 
-
-	public function action_sortFileAsc($id)
+    public function action_index()
     {
-		$_SESSION['method'] = 'sortFileASC';
-		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', $data, $this->getCount());
+        $data = $this->model->getImgLimit(0, $this->limit);
+        $this->view->generate('layouts/header_view.php');
+        $this->view->generate('layouts/main/top_main_view.php');
+        $this->view->generate('main_view.php', $data);
+        $this->view->generate('layouts/main/bottom_main_view.php', null, $this->getCount());
+        $this->view->generate('layouts/footer_view.php');
     }
 
-
-	public function action_index()
-	{
-		$data = $this->model->getImgLimit(0, $this->limit);
-		$this->view->generate('layouts/header_view.php');
-		$this->view->generate('layouts/main/top_main_view.php');
-		$this->view->generate('main_view.php', $data);
-		$this->view->generate('layouts/main/bottom_main_view.php', null,$this->getCount());
-		$this->view->generate('layouts/footer_view.php');
-	}
-
-	/**
-	 * @param $id
+    /**
+     * @param $id
      */
-	public function action_delete($id)
-	{
-		$this->model->deleteImg($id);
-		$this->redirect('main');
-	}
+    public function action_delete($id)
+    {
+        $this->model->deleteImg($id);
+        $this->redirect('main');
+    }
 
-	/**
-	 * @param $id
-	 * @param $title
+    /**
+     * @param $id
+     * @param $title
      */
-	public function action_edit($id, $title)
-	{
-		$this->model->updateTitle($id, urldecode($title));
-		$this->redirect('main');
-	}
+    public function action_edit($id, $title)
+    {
+        $this->model->updateTitle($id, urldecode($title));
+        $this->redirect('main');
+    }
 
-	/**
-	 * @return float
+    /**
+     * @return float
      */
-	private function getCount()
-	{
-		$getCountId = $this->model->getCountArticles();
-		$count = ceil($getCountId[0]['size'] / $this->limit);
-		return $count;
-	}
+    private function getCount()
+    {
+        $getCountId = $this->model->getCountArticles();
+        $count = ceil($getCountId[0]['size'] / $this->limit);
+        return $count;
+    }
 
-	/**
-	 * @param $id
+    /**
+     * @param $id
      */
-	public function action_page($id)
-	{
-		$data = $this->model->getImgLimit($id * 3, $this->limit, $_SESSION['method']);
-		$this->view->generate('main_view.php', $data, $this->getCount());
-	}
+    public function action_page($id = 0, $method = 'sortFileDesc')
+    {
+        $data = $this->model->getImgLimit($id * 3, $this->limit, $method);
+        $this->view->generate('main_view.php', $data, $this->getCount());
+    }
 }

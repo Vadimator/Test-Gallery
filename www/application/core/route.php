@@ -8,7 +8,7 @@
 class Route
 {
 
-	static function start()
+	public static function start()
 	{
 		// контроллер и действие по умолчанию
 		$controller_name = 'Main';
@@ -26,12 +26,12 @@ class Route
 			$action_name = $routes[2];
 		}
 
-		//пробуем получить дополнительные параметры - id
+		//получаем дополнительные параметр - id
 		if ( !empty($routes[3]) ){
 			$id = $routes[3];
 		}
 
-		//new
+		//получаем дополнительные параметр - parameter
 		if ( !empty($routes[4]) ){
 			$parameter = $routes[4];
 		}
@@ -61,22 +61,32 @@ class Route
 		
 		if(method_exists($controller, $action)) {
 			// вызываем действие контроллера
-			if(empty($id) && empty($parameter)) {
-				$controller->$action();
-			}elseif(empty($parameter)) {
-				$controller->$action($id);
+			if(empty($parameter)) {
+				isset($id) ? call_user_func(array($controller, $action), $id) : call_user_func(array($controller, $action));
 			}else {
 				$controller->$action($id, $parameter);
 			}
+
+			/*
+			if(empty($id) && empty($parameter)) {
+				//$controller->$action();
+				call_user_func(array($controller, $action));
+			}elseif(empty($parameter)) {
+				//$controller->$action($id);
+				call_user_func(array($controller, $action), $id);
+			}else {
+				$controller->$action($id, $parameter);
+				//call_user_func_array($controller->$action, array($id, &$parameter));
+			}
+			*/
 		}
 		else {
-
 			Route::ErrorPage404();
 		}
 	
 	}
 
-	function ErrorPage404()
+	public function ErrorPage404()
 	{
         $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
         header('HTTP/1.1 404 Not Found');

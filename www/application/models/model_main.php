@@ -11,22 +11,9 @@ class Model_main extends Model {
      * @param $method
      * @return array
      */
-    public function getImgLimit($start, $limit, $method='sortDateASC')
+    public function getImgLimit($start, $limit, $method='uploadDate', $type='ASC')
     {
-        switch ($method) {
-            case 'sortDateASC' :
-                return $this->sort("uploadDate", "ASC", $start, $limit);
-                break;
-            case 'sortDateDesc' :
-                return $this->sort("uploadDate", "DESC", $start, $limit);
-                break;
-            case 'sortFileDesc' :
-                return $this->sort("sizeFile", "DESC", $start, $limit);
-                break;
-            case 'sortFileASC' :
-                return $this->sort("sizeFile", "ASC", $start, $limit);
-                break;
-        }
+        return $this->sort($method, $type, $start, $limit);
     }
 
     /**

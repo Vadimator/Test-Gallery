@@ -36,6 +36,10 @@ class Route
 			$parameter = $routes[4];
 		}
 
+		if( !empty($routes[5])) {
+			$type = $routes[5];
+		}
+
 		$model_name = 'Model_'.$controller_name;
 		$controller_name = 'Controller_'.$controller_name;
 		$action_name = 'action_'.$action_name;
@@ -54,31 +58,18 @@ class Route
 			Route::ErrorPage404();
 		}
 		
-
 		$controller = new $controller_name;
 		$action = $action_name;
 
-		
 		if(method_exists($controller, $action)) {
 			// вызываем действие контроллера
-			if(empty($parameter)) {
+			if(empty($parameter) && empty($type)) {
 				isset($id) ? call_user_func(array($controller, $action), $id) : call_user_func(array($controller, $action));
-			}else {
+			}elseif (empty($type) ) {
 				$controller->$action($id, $parameter);
-			}
-
-			/*
-			if(empty($id) && empty($parameter)) {
-				//$controller->$action();
-				call_user_func(array($controller, $action));
-			}elseif(empty($parameter)) {
-				//$controller->$action($id);
-				call_user_func(array($controller, $action), $id);
 			}else {
-				$controller->$action($id, $parameter);
-				//call_user_func_array($controller->$action, array($id, &$parameter));
+				$controller->$action($id, $parameter, $type);
 			}
-			*/
 		}
 		else {
 			Route::ErrorPage404();

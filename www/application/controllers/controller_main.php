@@ -20,9 +20,9 @@ class Controller_Main extends Controller
         $this->view = new View();
     }
 
-    public function action_sort($method_sort, $id)
+    public function action_sort($method_sort, $id, $type)
     {
-        $data = $this->model->getImgLimit($id * 3, $this->limit, $method_sort);
+        $data = $this->model->getImgLimit($id * 3, $this->limit, $method_sort, $type);
         $this->view->generate('main_view.php', $data, $this->getCount());
     }
 
@@ -68,9 +68,9 @@ class Controller_Main extends Controller
     /**
      * @param $id
      */
-    public function action_page($id = 0, $method = 'sortFileDesc')
+    public function action_page($id = 0, $method = 'sortFileDesc', $type)
     {
-        $data = $this->model->getImgLimit($id * 3, $this->limit, $method);
+        $data = $this->model->getImgLimit($id * 3, $this->limit, $method, $type);
         $this->view->generate('main_view.php', $data, $this->getCount());
     }
 }

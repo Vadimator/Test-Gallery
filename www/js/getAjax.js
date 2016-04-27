@@ -6,7 +6,8 @@ $(document).ready(function() {
     var host = window.location.host;
     var main = 'http://' + host + '/main';
     var pageOfNumber =  $('ul.pagination').find('a').html() - 1;
-    var sort = 'sortFileDesc';
+    var sort = 'sortFile';
+    var type = 'DESC';
 
     $('.title-text').find('button').click(function() {
         var text = $(this).parent().find('div.title').html();
@@ -35,58 +36,26 @@ $(document).ready(function() {
         pageOfNumber = $(this).html() - 1;
         $('ul.pagination').find('li').removeClass('active');
         $(this).parent().addClass('active');
-        $.get('http://' + host + '/main/page/' + pageOfNumber  + '/' + sort, function(data) {
+        $.get('http://' + host + '/main/page/' + pageOfNumber  + '/' + sort + '/' + type, function(data) {
             $('.gallery').html(data);
             someFunction();
         });
     });
 
     $('#sortSizeDESC').click(function() {
-        $.ajax({
-            type: 'POST',
-            url: 'http://' + host + '/main/sort/sortFileDesc/' + pageOfNumber,
-            success: function(data){
-                $('.gallery').html(data);
-                someFunction();
-                sort = 'sortFileDesc';
-            }
-        });
+       sortFunc('sizeFile', 'DESC');
     });
 
     $('#sortSizeASC').click(function() {
-        $.ajax({
-            type: 'POST',
-            url: 'http://' + host + '/main/sort/sortFileASC/' + pageOfNumber,
-            success: function(data){
-                $('.gallery').html(data);
-                someFunction();
-                sort = 'sortFileASC';
-            }
-        });
+        sortFunc('sizeFile', 'ASC');
     });
 
     $('#sortDateASC').click(function() {
-        $.ajax({
-            type: 'POST',
-            url: 'http://' + host + '/main/sort/sortDateASC/' + pageOfNumber,
-            success: function(data){
-                $('.gallery').html(data);
-                someFunction();
-                sort = 'sortDateASC';
-            }
-        });
+       sortFunc('uploadDate', 'ASC');
     });
 
     $('#sortDateDESC').click(function() {
-        $.ajax({
-            type: 'POST',
-            url: 'http://' + host + '/main/sort/sortDateDesc/' + pageOfNumber,
-            success: function(data){
-                $('.gallery').html(data);
-                someFunction();
-                sort = 'sortDateDesc';
-            }
-        });
+       sortFunc('uploadDate', 'DESC');
     });
 
     $('.close').on('click', function()  {
@@ -142,5 +111,18 @@ $(document).ready(function() {
         });
         //ligtcase
         $('a[data-rel^=lightcase]').lightcase();
+    }
+
+    function sortFunc(methodSort, typeSort) {
+        $.ajax({
+            type: 'POST',
+            url: 'http://' + host + '/main/sort/' + methodSort + '/' + pageOfNumber + '/' + typeSort,
+            success: function(data){
+                $('.gallery').html(data);
+                sort = methodSort;
+                type = typeSort;
+                someFunction();
+            }
+        });
     }
 });

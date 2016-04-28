@@ -65,6 +65,16 @@ class Model_main extends Model {
         $stmt->execute();
     }
 
+    public function selectOne($id)
+    {
+        $db = $this->getConnect();
+        $sth = $db->prepare("SELECT title FROM pictures WHERE id = :id");
+        $sth->bindValue(':id', (int) $id, PDO::PARAM_INT);
+        $sth->execute();
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
     /**
      * @return PDO
      */

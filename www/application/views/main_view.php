@@ -1,3 +1,4 @@
+<article>
 <ul class="gallery col-md-12 text-center">
     <?php foreach ($data as $row) : ?>
         <?php $srcImg = '/main/page/' . $row['id'] . ''; ?>

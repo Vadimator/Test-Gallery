@@ -30,13 +30,13 @@ $(document).ready(function() {
 
 
    $('#addFoto').click(function() {
-       $.get('http://' + host+ '/add/', function(data) {
+       $.post('http://' + host+ '/add/', function(data) {
            $('main').html(data);
        });
    });
 
     $('.navbar-brand').click(function() {
-        $.get('http://' + host + '/main/', function(data) {
+        $.post('http://' + host + '/', function(data) {
             $('body').html(data);
         });
     });

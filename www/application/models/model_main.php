@@ -84,4 +84,19 @@ class Model_main extends Model {
     }
 
 
+
+    public function saveRequest($url, $data)
+    {
+        $db = $this->getConnect();
+
+        $stmt = $db->prepare("INSERT INTO request (url, data) VALUES (:url, :data)");
+        $stmt->bindParam(':url', $urlAdd);
+        $stmt->bindParam(':data', $dataAdd);
+        $urlAdd = $url;
+        $dataAdd = $data;
+        $stmt->execute();
+        $db = NULL;
+    }
+
+
 }
